@@ -39,8 +39,8 @@ export const createCheckoutSession = async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: `http://localhost:5173/course-progress/${courseId}`, // once payment successful redirect to course progress page
-      cancel_url: `http://localhost:5173/course-detail/${courseId}`,
+      success_url: `http://https://yeneta1.vercel.app//course-progress/${courseId}`, // once payment successful redirect to course progress page
+      cancel_url: `http://https://yeneta1.vercel.app//course-detail/${courseId}`,
       metadata: {
         courseId: courseId,
         userId: userId,
