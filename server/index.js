@@ -52,3 +52,6 @@ app.listen(PORT, () => {
   console.log(`Server listening at port ${PORT}`);
 
 });
+app.get("/", (req, res) => {
+  res.json({ status: "Backend is running!" });
+});
