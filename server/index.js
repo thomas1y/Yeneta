@@ -49,5 +49,6 @@ app.use("/api/v1/progress", courseProgressRoute);
 
 // ✅ Start Server
 app.listen(PORT, () => {
-  console.log(Server listening at port ${PORT});
+  console.log(`Server listening at port ${PORT}`);
+
 });
