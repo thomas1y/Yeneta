@@ -40,7 +40,7 @@ const Dashboard = () => {
           <CardTitle>Total Revenue</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-3xl font-bold text-blue-600">{totalRevenue}</p>
+          <p className="text-3xl font-bold text-blue-600">${totalRevenue}</p>
         </CardContent>
       </Card>
 
@@ -62,7 +62,7 @@ const Dashboard = () => {
                 interval={0}
               />
               <YAxis stroke="#6b7280" />
-              <Tooltip formatter={(value, name) => [`₹${value}`, name]} />
+              <Tooltip formatter={(value, name) => [`$${value}`, name]} />
               <Line
                 type="monotone"
                 dataKey="price"

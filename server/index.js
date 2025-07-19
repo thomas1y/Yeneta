@@ -17,13 +17,13 @@ const PORT = process.env.PORT || 3000;
 
 // ✅ CORS Configuration
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://yeneta1.vercel.app/",
   credentials: true
 }));
 
 // ✅ Manually handle preflight (OPTIONS) requests
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header("Access-Control-Allow-Origin", "https://yeneta1.vercel.app/");
   res.header("Access-Control-Allow-Credentials", "true");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
